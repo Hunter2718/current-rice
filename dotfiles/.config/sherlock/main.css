@@ -1,0 +1,94 @@
+* {
+  --text: 210, 100%, 85%;             /* Light neon blue text */
+  --border: 180, 100%, 5%;           /* Aqua blue border */
+  --accent: 200, 100%, 60%;
+
+  --tag-background: 210, 80%, 35%;
+  --tag-color: 210, 100%, 95%;
+  --error: 0, 84%, 60%;
+  --warning: 40, 100%, 65%;
+  --success: 145, 63%, 42%;
+
+  --selection: 210, 100%, 60%, 0.3;
+  --card-shadow: 0px 2px 12px rgba(0, 255, 255, 0.2);
+  --focus-ring: 210, 100%, 60%;
+}
+
+/* 🔵 Window styling */
+window {
+  border-radius: 15px;
+  border: 1px solid hsl(195, 100%, 50%); /* Neon cyan */
+  background-color: hsla(220, 20%, 12%, 0);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.4);
+}
+
+/* 🔵 Status bar */
+.status-bar {
+  background: hsla(220, 20%, 20%, 0.3);
+  border-top: 1px solid hsl(var(--border));
+  padding: 4px 10px;
+}
+.status-bar label {
+  color: hsla(var(--text), 0.5);
+}
+
+/* 🔵 Search bar */
+#search-bar {
+  background: hsla(220, 25%, 20%, 0.9);
+  color: hsl(var(--text));
+  border: none;
+  font-size: 18px;
+}
+#search-bar placeholder {
+  color: hsla(var(--text), 0.5);
+}
+
+/* 🔵 Tiles */
+.tile {
+  background: hsla(220, 15%, 15%, 0.6); /* Better contrast for readability */
+  border-radius: 12px;
+  transition: 0.2s ease-in-out;
+}
+.tile:hover,
+.tile:focus {
+  background: hsla(210, 100%, 60%, 0.2); /* Subtle hover effect */
+}
+.tile:selected {
+  background-color: hsla(210, 100%, 60%, 0.35); /* Highlighted selection */
+}
+.tile #title {
+  color: hsl(var(--text));
+}
+
+/* 🔵 Tags */
+.tile .tag,
+.tag {
+  background: hsla(var(--tag-background), 0.85);
+  color: hsl(var(--tag-color));
+  border-radius: 4px;
+}
+
+/* 🔵 Scrollbar */
+scrollbar slider {
+  background: hsla(var(--text), 0.2);
+}
+
+/* 🔵 Calculator & Event */
+#calc-tile-result,
+.tile.event-tile #time-label,
+#bulk-text-content-title {
+  color: hsl(var(--text));
+}
+
+/* 🔵 Fix all transparent glitches */
+.notifications,
+#overlay *,
+scrollbar,
+scrolledwindow > viewport,
+scrolledwindow > viewport > *,
+overshoot *,
+undershoot * {
+  background: transparent !important;
+  border: none !important;
+}
+

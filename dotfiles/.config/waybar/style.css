@@ -1,0 +1,40 @@
+* {
+  border: none;
+  border-radius: 10px;
+  font-family: "CaskaydiaCove Nerd Font", monospace;
+  font-size: 13px;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+  color: #c0caf5;
+  background: transparent;
+}
+
+#window,
+#clock,
+#battery,
+#pulseaudio,
+#network,
+#bluetooth,
+#workspaces,
+#tray {
+  padding: 2px 8px;
+  margin: 2px 4px;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid #00bfff;
+  border-radius: 10px;
+}
+
+#workspaces button {
+  padding: 4px 10px;
+  color: #c0caf5;
+  background: transparent;
+  border: none;
+}
+
+#workspaces button.active {
+  background-color: #00bfff;
+  color: #1a1b26;
+  border-radius: 10px;
+}
+

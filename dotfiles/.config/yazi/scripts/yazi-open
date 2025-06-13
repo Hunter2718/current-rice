@@ -1,0 +1,2 @@
+#!/bin/bash
+echo "nvim $1" >"$YAZI_NVIM_FILE"

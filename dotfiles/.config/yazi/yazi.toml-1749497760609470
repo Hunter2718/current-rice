@@ -1,0 +1,29 @@
+[manager]
+show_hidden = true
+show_symlink = true
+sort_by = "natural"
+sort_reverse = false
+sort_dir_first = true
+
+[preview]
+max_width = 80
+max_height = 40
+
+[shell]
+program = "kitty"
+args = ["-e", "zsh"]
+
+[[open.rules]]
+name = "cd"
+type = "directory"
+use = ["cd"]
+
+[[open.rules]]
+name = "nvim"
+type = "file"
+use = ["nvim"]
+
+[opener]
+cd = [{ run = "~/.config/yazi/scripts/yazi-cd", block = true }]
+nvim = [{ run = "~/.config/yazi/scripts/yazi-open", block = false }]
+
