@@ -18,9 +18,19 @@ If you try to use this and something breaks,
 
 ## 🛠️ What's Included
 
+- Zsh config
+- Btop config
 - Hyprland config
-- Waybar, Kitty, Rofi, Mako, and more
-- Zsh, Neovim, Yazi, Redshift, swww, etc.
+- Kitty config
+- lazygit config
+- Nemo config config
+- NeoVim config config
+- Sherlock config
+- Swaylock config
+- Tmux config
+- Waybar config
+- Yazi config
+- Ly config
 
 ---
 
