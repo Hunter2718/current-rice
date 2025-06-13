@@ -1,7 +1,7 @@
 # 🧠 current-rice
 
 This is my **current rice** setup as of the last push.  
-It will change **whenever I update my system** or change my rice.
+It will change **whenever I update my rice**.
 
 ---
 
