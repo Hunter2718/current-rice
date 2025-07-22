@@ -1,0 +1,61 @@
+;;;; Window
+
+(defwindow powermenu
+    :monitor 0
+    :geometry (geometry :anchor "top left"
+			:x "0%"
+			:y "0%"
+			:width "100%"
+			:height "100%"
+    )
+    :stacking "fg"
+    :focusable "exclusive"
+    
+    (box :class "noBorderBox"
+	 :spacing 50
+	 :orientation "horizontal"
+	 :space-evenly true
+	 :valign "center"
+	 :halign "center"
+	 :width 250
+	 :height 250
+	 :visible true
+
+	 (lock-widget)
+	 (reboot-widget)
+	 (shutdown-widget)
+	 (logout-widget)
+    )
+
+
+)
+
+;;;; Widgets
+
+(defwidget lock-widget []
+    (button :class "TransparentButton"
+	    :onclick "swaylock && eww close powermenu"
+	    (image :path "icons/lock.png" :image-width 32 :image-height 32)
+    )
+)
+
+(defwidget reboot-widget []
+    (button :class "TransparentButton"
+	    :onclick "systemctl reboot && eww close powermenu"
+	    (image :path "icons/reboot.png" :image-width 32 :image-height 32)
+    )
+)
+
+(defwidget shutdown-widget []
+    (button :class "TransparentButton"
+	    :onclick "systemctl poweroff && eww close powermenu"
+	    (image :path "icons/shutdown.png" :image-width 32 :image-height 32)
+    )
+)
+
+(defwidget logout-widget []
+    (button :class "TransparentButton"
+	    :onclick "hyprctl dispatch exit && eww close powermenu"
+	    (image :path "icons/logout.png" :image-width 32 :image-height 32)
+    )
+)

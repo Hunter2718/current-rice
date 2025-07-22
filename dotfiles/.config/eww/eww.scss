@@ -1,0 +1,59 @@
+// Fullscreen background dim with blur and border glow
+.powermenu {
+  background-color: rgba(0, 0, 0, 0.65); // Dim everything
+  border: none;
+  padding: 40px;
+}
+
+// Box with no border
+.noBorderBox {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+// Button style
+.TransparentButton {
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid #00bfff;
+  border-radius: 10px;
+  padding: 30px 40px;
+  font-size: 1.5em;
+  min-width: 150px;
+}
+
+button:hover {
+  box-shadow: 0 0 5px #00bfff;
+}
+
+button:focus {
+  box-shadow: 0 0 5px #00bfff;
+  outline: none;
+}
+
+button:active {
+  background-color: rgba(0, 191, 255, 0.25);
+  border-color: white;
+}
+
+.note-popup {
+  background-color: rgba(0, 0, 0, 0.9);
+  border: 2px solid #00bfff;
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.note-input-box input {
+  background-color: #1a1a1a;
+  color: white;
+  border: 1px solid #00bfff;
+  border-radius: 10px;
+  padding: 8px;
+}
+
+.note-input-box button {
+  background-color: #00bfff;
+  color: black;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+}
+
